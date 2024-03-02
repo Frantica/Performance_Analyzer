@@ -1,0 +1,30 @@
+[
+  {
+    "empId": 1,
+    "name": "Arjun",
+    "dob": "16-11-2000",
+    "role": "Software Engineer",
+    "num": 1
+  },
+  {
+    "empId": 2,
+    "name": "Mahesh",
+    "dob": "15-01-2000",
+    "role": "Web Developer",
+    "num": 2
+  },
+  {
+    "empId": 3,
+    "name": "Anjali",
+    "dob": "20-05-2000",
+    "role": "App Developer",
+    "num": 3
+  },
+  {
+    "empId": 4,
+    "name": "Amrita",
+    "dob": "31-03-2000",
+    "role": "Salesforce Developer",
+    "num": 4
+  }
+]

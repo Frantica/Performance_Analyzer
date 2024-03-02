@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:background="@drawable/main_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/black">
+
+        <ImageView
+            android:id="@+id/imageViewUserIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user_profile_icon"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/imageViewLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:contentDescription="@string/user_profile"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/four_bg"
+            android:gravity="center"
+            android:text="@string/__4"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textColor="@color/light_green"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewUserIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.921" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="70dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/moptro_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/moptro_logo"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/light_gray"
+            app:cardBackgroundColor="@color/card_bg_color"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:backgroundTint="@color/search_bg_color">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="48dp"
+                    android:background="@drawable/curved_background"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/sourcesansprobold"
+                    android:gravity="center"
+                    android:text="@string/employee_productivity_dashboard"
+                    android:textColor="@color/headline_tv_color"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewMonday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewMonday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="78dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:text="@string/productivity_of_monday"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/progressBarMonday"
+                    app:layout_constraintRight_toLeftOf="@id/MondayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/MondayPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_4"
+                    android:textColor="@color/light_green"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewMonday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.855"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMonday" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarMonday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:focusable="false"
+                    android:progress="4"
+                    android:progressDrawable="@drawable/progress_bar_custom"
+                    android:progressTint="@color/light_green"
+                    app:layout_constraintEnd_toStartOf="@+id/MondayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMonday" />
+
+                <TextView
+                    android:id="@+id/textViewTuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:text="@string/productivity_of_tuesday"
+                    android:textColor="@color/white"
+                    app:layout_constraintRight_toLeftOf="@id/TuesdayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/progressBarMonday" />
+
+                <TextView
+                    android:id="@+id/TuesdayPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_92"
+                    android:textColor="@color/light_green"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewTuesday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.847"
+                    app:layout_constraintStart_toEndOf="@+id/textViewTuesday" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarTuesday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:focusable="false"
+                    android:progress="92"
+                    android:progressDrawable="@drawable/progress_bar_custom"
+                    android:progressTint="@color/light_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/TuesdayPercent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTuesday"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewWednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:text="@string/productivity_of_wednesday"
+                    android:textColor="@color/white"
+                    app:layout_constraintRight_toLeftOf="@id/WednesdayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTuesday" />
+
+                <TextView
+                    android:id="@+id/WednesdayPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_122"
+                    android:textColor="@color/light_green"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewWednesday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.868"
+                    app:layout_constraintStart_toEndOf="@+id/textViewWednesday" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarWednesday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:focusable="false"
+                    android:progress="122"
+                    android:progressDrawable="@drawable/progress_bar_custom"
+                    android:progressTint="@color/light_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/WednesdayPercent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewWednesday"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:text="@string/productivity_of_thursday"
+                    android:textColor="@color/white"
+                    app:layout_constraintRight_toLeftOf="@id/ThursdayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewWednesday" />
+
+                <TextView
+                    android:id="@+id/ThursdayPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_93"
+                    android:textColor="@color/light_green"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewThursday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.868"
+                    app:layout_constraintStart_toEndOf="@+id/textViewThursday" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarThursday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:focusable="false"
+                    android:progress="93"
+                    android:progressDrawable="@drawable/progress_bar_custom"
+                    android:progressTint="@color/light_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ThursdayPercent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewThursday"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/productivity_of_friday"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintRight_toLeftOf="@id/FridayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewThursday" />
+
+                <TextView
+                    android:id="@+id/FridayPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_89"
+                    android:textColor="@color/light_green"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewFriday"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.868"
+                    app:layout_constraintStart_toEndOf="@+id/textViewFriday" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarFriday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:focusable="false"
+                    android:progress="89"
+                    android:progressDrawable="@drawable/progress_bar_custom"
+                    android:progressTint="@color/light_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/FridayPercent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewFriday"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:text="@string/productivity_of_saturday"
+                    android:textColor="@color/white"
+                    app:layout_constraintRight_toLeftOf="@id/SaturdayPercent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewFriday" />
+
+                <TextView
+                    android:id="@+id/SaturdayPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_98"
+                    android:textColor="@color/light_green"
+                    android:fontFamily="@font/mulishregular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewSaturday"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.868"
+                    app:layout_constraintStart_toEndOf="@+id/textViewSaturday" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarSaturday"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="35dp"
+                    android:focusable="false"
+                    android:progress="98"
+                    android:progressDrawable="@drawable/progress_bar_custom"
+                    android:progressTint="@color/light_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/SaturdayPercent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSaturday"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

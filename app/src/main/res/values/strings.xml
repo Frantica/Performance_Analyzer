@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Employee Productivity Tracker</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="we_are_electric">We are Electric</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="productivity_of_monday">Productivity of Monday</string>
+    <string name="_4">4%</string>
+    <string name="productivity_of_tuesday">Productivity of Tuesday</string>
+    <string name="_92">92%</string>
+    <string name="productivity_of_wednesday">Productivity of Wednesday</string>
+    <string name="_122">122%</string>
+    <string name="employee_productivity_dashboard">Employee Productivity Dashboard</string>
+    <string name="emp_id_1">1</string>
+    <string name="name_arjun">Arjun</string>
+    <string name="dob_16_11_2000">16–11–2000</string>
+    <string name="role_software_engineer">Software Engineer</string>
+    <string name="productivity_of_thursday">Productivity of Thursday</string>
+    <string name="productivity_of_friday">Productivity of Friday</string>
+    <string name="productivity_of_saturday">Productivity of Saturday</string>
+    <string name="_93">93%</string>
+    <string name="_89">89%</string>
+    <string name="_98">98%</string>
+    <string name="emp">EMP :</string>
+    <string name="name">Name :</string>
+    <string name="dob">DOB :</string>
+    <string name="role">Role :</string>
+    <string name="__4">4</string>
+    <string name="_1">1</string>
+    <string name="app_logo">App Logo</string>
+    <string name="moptro_logo">Moptro Logo</string>
+    <string name="user_profile">User Profile</string>
+</resources>

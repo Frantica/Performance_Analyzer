@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="134dp"
+            android:contentDescription="@string/app_logo"
+            android:src="@drawable/app_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/weAreElectric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/we_are_electric"
+            android:fontFamily="@font/mulishregular"
+            android:textAlignment="center"
+            android:textColor="@color/light_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="50dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/curved_background"
+            android:fontFamily="@font/mulishbold"
+            android:elevation="40dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray_color"
+            android:textSize="17sp"
+            android:foregroundTintMode="multiply"
+            android:foregroundTint="@color/email_fg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weAreElectric" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="50dp"
+            android:autofillHints="password"
+            android:background="@drawable/curved_background"
+            android:fontFamily="@font/mulishbold"
+            android:elevation="40dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_gray_color"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/login"
+            android:fontFamily="@font/mulishbold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/light_green"
+            android:fontFamily="@font/mulishregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
