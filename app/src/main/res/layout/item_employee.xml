@@ -3,126 +3,126 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
     android:layout_marginTop="15dp"
-    app:cardElevation="12dp"
     android:background="@color/searchView_bg"
     app:cardCornerRadius="20dp"
-    android:layout_marginHorizontal="5dp">
+    app:cardElevation="12dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="15dp"
-        android:background="@color/search_bg_color">
+        android:background="@color/search_bg_color"
+        android:paddingHorizontal="15dp">
 
         <TextView
-            android:id="@+id/tvEmp"
+            android:id="@+id/tv_id_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/emp"
-            android:fontFamily="@font/mulishregular"
             android:layout_margin="18dp"
+            android:fontFamily="@font/mulishregular"
+            android:text="@string/emp"
             android:textColor="@color/white"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/empId"
+            android:id="@+id/tv_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/tvEmp"
-            android:layout_marginBottom="18dp"
             android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/tv_id_label"
             android:fontFamily="@font/mulishregular"
             android:text="@string/emp_id_1"
             android:textColor="@color/white"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tvNum"
+            android:id="@+id/tv_serial_no"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginStart="175dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/mulishregular"
             android:layout_marginEnd="12dp"
-            android:layout_toEndOf="@+id/empId"
+            android:layout_toEndOf="@+id/tv_id"
             android:background="@drawable/four_bg"
+            android:fontFamily="@font/mulishregular"
             android:gravity="center"
             android:text="@string/_1"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tvName"
+            android:id="@+id/tv_name_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvEmp"
+            android:layout_below="@+id/tv_id_label"
+            android:layout_margin="18dp"
+            android:fontFamily="@font/mulishregular"
             android:text="@string/name"
-            android:fontFamily="@font/mulishregular"
-            android:layout_margin="18dp"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
-
-        <TextView
-            android:id="@+id/empName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/tvName"
-            android:layout_below="@+id/empId"
-            android:layout_marginBottom="18dp"
-            android:layout_marginTop="18dp"
-            android:text="@string/name_arjun"
-            android:fontFamily="@font/mulishregular"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
-
-        <TextView
-            android:id="@+id/tvDob"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvName"
-            android:text="@string/dob"
-            android:fontFamily="@font/mulishregular"
-            android:layout_margin="18dp"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
-
-
-        <TextView
-            android:id="@+id/dob"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/empName"
-            android:layout_toEndOf="@+id/tvDob"
-            android:text="@string/dob_16_11_2000"
-            android:fontFamily="@font/mulishregular"
-            android:textColor="@color/dob_text_color"
-            android:layout_marginBottom="18dp"
-            android:layout_marginTop="18dp"
-            android:textSize="14sp"/>
-
-
-        <TextView
-            android:id="@+id/tvRole"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvDob"
-            android:layout_margin="18dp"
-            android:text="@string/role"
-            android:fontFamily="@font/mulishregular"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/role"
+            android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dob"
-            android:layout_marginBottom="18dp"
+            android:layout_below="@+id/tv_id"
             android:layout_marginTop="18dp"
-            android:layout_toEndOf="@+id/tvRole"
-            android:text="@string/role_software_engineer"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/tv_name_label"
             android:fontFamily="@font/mulishregular"
+            android:text="@string/name_arjun"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_dob_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_label"
+            android:layout_margin="18dp"
+            android:fontFamily="@font/mulishregular"
+            android:text="@string/dob"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/tv_dob_label"
+            android:fontFamily="@font/mulishregular"
+            android:text="@string/dob_16_11_2000"
+            android:textColor="@color/dob_text_color"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_role_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dob_label"
+            android:layout_margin="18dp"
+            android:fontFamily="@font/mulishregular"
+            android:text="@string/role"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dob"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/tv_role_label"
+            android:fontFamily="@font/mulishregular"
+            android:text="@string/role_software_engineer"
             android:textColor="@color/light_green"
             android:textSize="14sp" />
 
